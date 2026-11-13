@@ -42,6 +42,8 @@ Traditional credit grades bucket borrowers into coarse risk tiers that leave val
 | Logistic Regression | 0.683 | +0.005 | [+0.002, +0.007] |
 | **LightGBM** | **0.694** | **+0.016** | **[+0.013, +0.018]** |
 
+*Lifts and confidence intervals are computed from unrounded AUCs, so they may differ by ±0.001 from the difference of the rounded values shown.*
+
 Even a linear model beats Lending Club’s benchmark with statistical confidence, while LightGBM more than triples that ranking lift across 1,000 paired bootstrap resamples (*p* < 0.001).
 
 ### Stability by Quarter (2015 Test Set)
