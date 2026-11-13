@@ -1,0 +1,152 @@
+column,role,reason
+loan_amnt,feature,known at application time
+annual_inc,feature,known at application time
+dti,feature,known at application time
+delinq_2yrs,feature,known at application time
+fico_range_low,feature,known at application time
+fico_range_high,feature,known at application time
+inq_last_6mths,feature,known at application time
+mths_since_last_delinq,feature,known at application time
+mths_since_last_record,feature,known at application time
+open_acc,feature,known at application time
+pub_rec,feature,known at application time
+revol_bal,feature,known at application time
+revol_util,feature,known at application time
+total_acc,feature,known at application time
+collections_12_mths_ex_med,feature,known at application time
+mths_since_last_major_derog,feature,known at application time
+acc_now_delinq,feature,known at application time
+tot_coll_amt,feature,known at application time
+tot_cur_bal,feature,known at application time
+total_rev_hi_lim,feature,known at application time
+acc_open_past_24mths,feature,known at application time
+avg_cur_bal,feature,known at application time
+bc_open_to_buy,feature,known at application time
+bc_util,feature,known at application time
+chargeoff_within_12_mths,feature,known at application time
+delinq_amnt,feature,known at application time
+mo_sin_old_il_acct,feature,known at application time
+mo_sin_old_rev_tl_op,feature,known at application time
+mo_sin_rcnt_rev_tl_op,feature,known at application time
+mo_sin_rcnt_tl,feature,known at application time
+mort_acc,feature,known at application time
+mths_since_recent_bc,feature,known at application time
+mths_since_recent_bc_dlq,feature,known at application time
+mths_since_recent_inq,feature,known at application time
+mths_since_recent_revol_delinq,feature,known at application time
+num_accts_ever_120_pd,feature,known at application time
+num_actv_bc_tl,feature,known at application time
+num_actv_rev_tl,feature,known at application time
+num_bc_sats,feature,known at application time
+num_bc_tl,feature,known at application time
+num_il_tl,feature,known at application time
+num_op_rev_tl,feature,known at application time
+num_rev_accts,feature,known at application time
+num_rev_tl_bal_gt_0,feature,known at application time
+num_sats,feature,known at application time
+num_tl_120dpd_2m,feature,known at application time
+num_tl_30dpd,feature,known at application time
+num_tl_90g_dpd_24m,feature,known at application time
+num_tl_op_past_12m,feature,known at application time
+pct_tl_nvr_dlq,feature,known at application time
+percent_bc_gt_75,feature,known at application time
+pub_rec_bankruptcies,feature,known at application time
+tax_liens,feature,known at application time
+tot_hi_cred_lim,feature,known at application time
+total_bal_ex_mort,feature,known at application time
+total_bc_limit,feature,known at application time
+total_il_high_credit_limit,feature,known at application time
+emp_length,feature,known at application time
+home_ownership,feature,known at application time
+verification_status,feature,known at application time
+purpose,feature,known at application time
+grade,benchmark only,Lending Club's own risk grade / price
+sub_grade,benchmark only,Lending Club's own risk grade / price
+int_rate,benchmark only,Lending Club's own risk grade / price
+installment,benchmark only,Lending Club's own risk grade / price
+term,helper,"used to build universe, target or derived features"
+issue_d,helper,"used to build universe, target or derived features"
+loan_status,helper,"used to build universe, target or derived features"
+application_type,helper,"used to build universe, target or derived features"
+earliest_cr_line,helper,"used to build universe, target or derived features"
+funded_amnt,excluded,leakage: recorded after the loan was issued
+funded_amnt_inv,excluded,leakage: recorded after the loan was issued
+pymnt_plan,excluded,leakage: recorded after the loan was issued
+out_prncp,excluded,leakage: recorded after the loan was issued
+out_prncp_inv,excluded,leakage: recorded after the loan was issued
+total_pymnt,excluded,leakage: recorded after the loan was issued
+total_pymnt_inv,excluded,leakage: recorded after the loan was issued
+total_rec_prncp,excluded,leakage: recorded after the loan was issued
+total_rec_int,excluded,leakage: recorded after the loan was issued
+total_rec_late_fee,excluded,leakage: recorded after the loan was issued
+recoveries,excluded,leakage: recorded after the loan was issued
+collection_recovery_fee,excluded,leakage: recorded after the loan was issued
+last_pymnt_d,excluded,leakage: recorded after the loan was issued
+last_pymnt_amnt,excluded,leakage: recorded after the loan was issued
+next_pymnt_d,excluded,leakage: recorded after the loan was issued
+last_credit_pull_d,excluded,leakage: recorded after the loan was issued
+last_fico_range_high,excluded,leakage: recorded after the loan was issued
+last_fico_range_low,excluded,leakage: recorded after the loan was issued
+initial_list_status,excluded,leakage: recorded after the loan was issued
+hardship_flag,excluded,leakage: recorded after the loan was issued
+hardship_type,excluded,leakage: recorded after the loan was issued
+hardship_reason,excluded,leakage: recorded after the loan was issued
+hardship_status,excluded,leakage: recorded after the loan was issued
+deferral_term,excluded,leakage: recorded after the loan was issued
+hardship_amount,excluded,leakage: recorded after the loan was issued
+hardship_start_date,excluded,leakage: recorded after the loan was issued
+hardship_end_date,excluded,leakage: recorded after the loan was issued
+payment_plan_start_date,excluded,leakage: recorded after the loan was issued
+hardship_length,excluded,leakage: recorded after the loan was issued
+hardship_dpd,excluded,leakage: recorded after the loan was issued
+hardship_loan_status,excluded,leakage: recorded after the loan was issued
+orig_projected_additional_accrued_interest,excluded,leakage: recorded after the loan was issued
+hardship_payoff_balance_amount,excluded,leakage: recorded after the loan was issued
+hardship_last_payment_amount,excluded,leakage: recorded after the loan was issued
+disbursement_method,excluded,leakage: recorded after the loan was issued
+debt_settlement_flag,excluded,leakage: recorded after the loan was issued
+debt_settlement_flag_date,excluded,leakage: recorded after the loan was issued
+settlement_status,excluded,leakage: recorded after the loan was issued
+settlement_date,excluded,leakage: recorded after the loan was issued
+settlement_amount,excluded,leakage: recorded after the loan was issued
+settlement_percentage,excluded,leakage: recorded after the loan was issued
+settlement_term,excluded,leakage: recorded after the loan was issued
+zip_code,excluded,fair lending: geography can act as a proxy for protected classes
+addr_state,excluded,fair lending: geography can act as a proxy for protected classes
+open_acc_6m,excluded,not populated before late 2015 (would be missing for all training loans)
+open_act_il,excluded,not populated before late 2015 (would be missing for all training loans)
+open_il_12m,excluded,not populated before late 2015 (would be missing for all training loans)
+open_il_24m,excluded,not populated before late 2015 (would be missing for all training loans)
+mths_since_rcnt_il,excluded,not populated before late 2015 (would be missing for all training loans)
+total_bal_il,excluded,not populated before late 2015 (would be missing for all training loans)
+il_util,excluded,not populated before late 2015 (would be missing for all training loans)
+open_rv_12m,excluded,not populated before late 2015 (would be missing for all training loans)
+open_rv_24m,excluded,not populated before late 2015 (would be missing for all training loans)
+max_bal_bc,excluded,not populated before late 2015 (would be missing for all training loans)
+all_util,excluded,not populated before late 2015 (would be missing for all training loans)
+inq_fi,excluded,not populated before late 2015 (would be missing for all training loans)
+total_cu_tl,excluded,not populated before late 2015 (would be missing for all training loans)
+inq_last_12m,excluded,not populated before late 2015 (would be missing for all training loans)
+annual_inc_joint,excluded,joint applications only (universe is individual applicants)
+dti_joint,excluded,joint applications only (universe is individual applicants)
+verification_status_joint,excluded,joint applications only (universe is individual applicants)
+revol_bal_joint,excluded,joint applications only (universe is individual applicants)
+sec_app_fico_range_low,excluded,joint applications only (universe is individual applicants)
+sec_app_fico_range_high,excluded,joint applications only (universe is individual applicants)
+sec_app_earliest_cr_line,excluded,joint applications only (universe is individual applicants)
+sec_app_inq_last_6mths,excluded,joint applications only (universe is individual applicants)
+sec_app_mort_acc,excluded,joint applications only (universe is individual applicants)
+sec_app_open_acc,excluded,joint applications only (universe is individual applicants)
+sec_app_revol_util,excluded,joint applications only (universe is individual applicants)
+sec_app_open_act_il,excluded,joint applications only (universe is individual applicants)
+sec_app_num_rev_accts,excluded,joint applications only (universe is individual applicants)
+sec_app_chargeoff_within_12_mths,excluded,joint applications only (universe is individual applicants)
+sec_app_collections_12_mths_ex_med,excluded,joint applications only (universe is individual applicants)
+sec_app_mths_since_last_major_derog,excluded,joint applications only (universe is individual applicants)
+id,excluded,"identifier, free text or constant"
+member_id,excluded,"identifier, free text or constant"
+url,excluded,"identifier, free text or constant"
+desc,excluded,"identifier, free text or constant"
+emp_title,excluded,"identifier, free text or constant"
+title,excluded,"identifier, free text or constant"
+policy_code,excluded,"identifier, free text or constant"

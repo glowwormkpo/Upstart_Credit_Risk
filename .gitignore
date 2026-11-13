@@ -1,0 +1,7 @@
+# Raw and processed data are too large for GitHub (download instructions in README)
+data/
+*.zip
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+.DS_Store
