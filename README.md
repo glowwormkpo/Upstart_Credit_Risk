@@ -3,7 +3,7 @@
 I built a leakage-controlled credit underwriting pipeline using Logistic Regression and LightGBM on 2013–2015 Lending Club 36-month loan data (`n = 282,787` out-of-time 2015 test loans) and found that raw borrower features significantly outperform Lending Club’s proprietary pricing grade (**0.694 vs. 0.679 ROC AUC**).
 
 ## Key Results
-* **Beats Lending Club’s own grade:** LightGBM’s out-of-time AUC is **0.694** vs. **0.679** for LC’s `sub_grade`, a lift of **+0.016** (95% paired bootstrap CI **[+0.013, +0.018]**). A logistic regression baseline gains **+0.005** (95% CI **[+0.002, +0.007]**), meaning LightGBM delivers more than three times the lift of a linear model.
+* **Beats Lending Club’s own grade:** LightGBM’s out-of-time AUC is **0.694** vs. **0.679** for LC’s `sub_grade`, a lift of **+0.016** (computed from unrounded AUCs; 95% paired bootstrap CI **[+0.013, +0.018]**). A logistic regression baseline gains **+0.005** (95% CI **[+0.002, +0.007]**), meaning LightGBM delivers more than three times the lift of a linear model.
 * **Stable over time:** The lift held in every quarter of 2015 (**+0.014 to +0.017**).
 * **More approvals at the same default rate:** Holding portfolio default risk equal to Lending Club's 70% approval cutoff (10.65% default rate), LightGBM expands approvals to **73.67%**—unlocking **+10,389** additional funded loans at the same default rate (or cutting defaults by **about 4%** at the same 70% loan volume).
 * **Strong within-grade separation:** Among borrowers whom Lending Club placed in the same `sub_grade`, LightGBM achieves a loan-weighted within-grade AUC of **0.611** (vs. Lending Club's 0.500 random baseline), indicating genuine borrower risk separation across every A–E sub-grade.
